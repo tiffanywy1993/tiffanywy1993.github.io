@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>Weather Data Analysis</title>
+</head>
+
+
+
+<body style="background-color: pink">
+
+
+      <nav class="navbar navbar-default">
+          <div class="container">
+              <div class="navbar-header">
+                  <a class="navbar-brand logo" href="index.html">
+                  <span class="nav-color">Latitude</span></a>
+              </div>
+
+
+
+            <div class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span>
+                  </a>
+                    <ul class="navbar- nav ml-auto">
+                    <ul class="dropdown-menu">
+
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="temperature.html">Max Temperature</a>
+                        <a href="humidity.html">Humidity</a>
+                        <a href="cloudiness.html">Cloudiness</a>
+                        <a href="wind_speed.html">Wind Speed</a>
+                    </ul>
+                </li>
+                <li><a href="Comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+
+                    <h2 style="border: 4px solid pink;">Summary: Latitude vs Longitude</h2>
+
+                    <hr>
+                    <img class="first image" src="assets\Global_Temperature.png" alt="first image" >
+                    <p class = "text">
+                      The purpose of this project was to analyze how weather changes as you get closer to the equater.
+                      To accomplish this analysis,
+                      we got data from the OpenWeatherMapAPI to assemble a dataset on over 500 cities. <br>
+
+                      Then, we looked at the relationship between humidity, temperature, windspeed and cloudiness between latitude and longitude.
+                      <br>
+
+                      In conclusion, an equatorial climate is a type of tropical climate
+                    in which there is no dry season. It is usually found at latitudes
+                    within five degrees of the equator and tropical rainforest is the natural vegetation.</p>
+                    <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 sidebar">
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h2 style="border: 4px solid pink;">Visualizations</h2>
+                            <hr>
+
+                            <div class="row" >
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="temperature.html"><img class = "img img-responsive" src="assets\Latitude_vs_MaxTemp.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="humidity.html"><img class = "img img-responsive" src="assets\Latitude_vs_Humidity.png" style="width:100%" alt=""></a></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="cloudiness.html"><img class = "img img-responsive" src="assets\Latitude_vs_Cloudiness.png" style="width:100%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><a href="wind_speed.html"><img class = "img img-responsive" src="assets\Latitude_vs_WindSpeed.png" style="width:100%" alt=""></a></div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
